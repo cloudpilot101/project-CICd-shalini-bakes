@@ -1,9 +1,9 @@
+  pipeline {
     agent any
 
     stages {
         stage('Checkout') {
             steps {
-                // Clone your repo
                 git branch: 'main', url: 'https://github.com/cloudpilot101/project-CICd-shalini-bakes.git'
             }
         }
